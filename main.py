@@ -909,6 +909,9 @@ class SubtitleRemover:
 
 
 if __name__ == '__main__':
+    # Remove todos os argumentos de linha de comando para evitar conflitos
+    sys.argv = sys.argv[:1]
+    
     multiprocessing.set_start_method("spawn")
     # 1. Define o caminho do vídeo fixo
     video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test.mp4")
@@ -918,4 +921,3 @@ if __name__ == '__main__':
         sd.run()
     else:
         print(f'Invalid video path: {video_path}')
-
