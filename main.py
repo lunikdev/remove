@@ -761,7 +761,7 @@ if __name__ == '__main__':
     sys.argv = sys.argv[:1]
     
     multiprocessing.set_start_method("spawn")
-    video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remover.mkv")
+    video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pequeno.mp4")
     if is_video_or_image(video_path):
         sd = SubtitleRemover(video_path, sub_area=(865, 1016, 380, 1540))  # Definindo a área da legenda aqui
         sd.run()
