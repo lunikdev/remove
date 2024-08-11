@@ -44,7 +44,7 @@ class SubtitleDetect:
         
         # Defina aqui a área padrão para a legenda
         # Para alterar no futuro, modifique os valores de ymin, ymax, xmin, xmax
-        self.sub_area = sub_area or (870, 1015, 360, 1540)  # ymin, ymax, xmin, xmax
+        self.sub_area = sub_area or (865, 1016, 380, 1540)  # ymin, ymax, xmin, xmax
 
     def detect_subtitle(self, img):
         dt_boxes, elapse = self.text_detector(img)
