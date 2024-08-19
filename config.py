@@ -70,7 +70,7 @@ class InpaintMode(Enum):
 # - InpaintMode.STTN 算法：对于真人视频效果较好，速度快，可以跳过字幕检测
 # - InpaintMode.LAMA 算法：对于动画类视频效果好，速度一般，不可以字幕检测
 # - InpaintMode.PROPAINTER 算法： 需要消耗大量显存，速度较慢，对运动非常剧烈的视频效果较好
-MODE = InpaintMode.STTN
+MODE = InpaintMode.PROPAINTER
 # 【设置像素点偏差】
 # 用于判断是不是非字幕区域(一般认为字幕文本框的长度是要大于宽度的，如果字幕框的高大于宽，且大于的幅度超过指定像素点大小，则认为是错误检测)
 THRESHOLD_HEIGHT_WIDTH_DIFFERENCE = 10
